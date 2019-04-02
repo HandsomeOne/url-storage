@@ -1,0 +1,73 @@
+{
+  "name": "url-storage",
+  "version": "0.2.2",
+  "description": "storage fields in `window.location`.",
+  "keywords": [],
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "author": "Zhou Qi <i@handsomeone.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "start": "docz dev",
+    "doc": "docz build",
+    "prebuild": "eslint \"src/**\" && rimraf lib",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.9",
+    "@types/node": "^11.10.4",
+    "@typescript-eslint/eslint-plugin": "^1.4.2",
+    "@typescript-eslint/parser": "^1.4.2",
+    "docz": "^0.13.7",
+    "docz-theme-default": "^0.13.7",
+    "eslint": "^5.15.1",
+    "eslint-config-prettier": "^4.1.0",
+    "husky": "^1.3.1",
+    "jest": "^24.1.0",
+    "prettier": "^1.16.4",
+    "pretty-quick": "^1.10.0",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.0.0",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "@types/qs": "^6.5.2",
+    "qs": "^6.6.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testURL": "http://example.com/",
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/test/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 95,
+        "lines": 95,
+        "statements": 95
+      }
+    },
+    "collectCoverage": true
+  }
+}
