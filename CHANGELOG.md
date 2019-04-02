@@ -1,8 +1,3 @@
----
-name: 更新日志
-route: /changelog
----
-
 ## 0.2.2
 
 - 默认导出 `urlStorage`
