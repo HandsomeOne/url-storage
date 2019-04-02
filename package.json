@@ -1,7 +1,7 @@
 {
   "name": "url-storage",
   "version": "0.2.2",
-  "description": "storage fields in `window.location`.",
+  "description": "Store data in `window.location`.",
   "keywords": [],
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -69,5 +69,8 @@
       }
     },
     "collectCoverage": true
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
