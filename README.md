@@ -2,6 +2,8 @@
 
 使用 URL 参数来存取数据，用来解决分享 URL 的需求。
 
+[![NPM](https://nodei.co/npm/url-storage.png)](https://nodei.co/npm/url-storage/)
+
 完全采用 TypeScript 开发，并且有 100% 的测试覆盖率。
 
 `urlStorage` 实现了 `Storage` 接口，意味着它的 API 和 `localStorage` 以及 `sessionStorage` 是一致的。
