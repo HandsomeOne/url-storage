@@ -1,6 +1,6 @@
 {
   "name": "url-storage",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Store data in `window.location`.",
   "keywords": [],
   "main": "lib/index.js",
