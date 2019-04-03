@@ -14,7 +14,7 @@
     "doc": "docz build",
     "prebuild": "eslint \"src/**\" && rimraf lib",
     "build": "tsc",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run test && npm run build"
   },
   "husky": {
     "hooks": {
